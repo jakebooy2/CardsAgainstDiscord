@@ -100,6 +100,10 @@ public class Game {
         cardCzar = players.get(czarIndex);
     }
 
+    public TextChannel getChannel(){
+        return this.channel;
+    }
+
 
 
 
