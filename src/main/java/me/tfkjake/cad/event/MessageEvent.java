@@ -73,10 +73,10 @@ public class MessageEvent extends CommandHandler {
             }
             if(instance.getStage() == CreationStage.FINISHED){
                 if(e.getMessage().getContentRaw().equalsIgnoreCase("start")){
-                   /* if(instance.getPlayers().size() < 2){
+                    if(instance.getPlayers().size() < 2){
                         e.getChannel().sendMessage("You need 3 or more players (including yourself) to start!").queue();
                         return;
-                    }*/
+                    }
                     instance.startGame();
                     return;
                 }
