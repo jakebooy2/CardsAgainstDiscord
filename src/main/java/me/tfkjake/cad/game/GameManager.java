@@ -18,8 +18,10 @@ public class GameManager {
 
     public void getGame(String channelId){
         for(Game game : games){
-
+            if(game.getChannel().getId().equals(channelId)
+                return game;
         }
+        return null;
     }
 
 }
