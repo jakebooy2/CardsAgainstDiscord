@@ -22,7 +22,7 @@ public class Command {
 
     public void setHelp(String help){
         this.help = help;
-        //Sheepy.getStaticSQL().update("UPDATE commands SET help = ? WHERE command = ?", help, name);
+        Sheepy.getStaticSQL().update("UPDATE commands SET help = ? WHERE command = ?", help, name);
     }
 
     public void addAlias(String alias){
